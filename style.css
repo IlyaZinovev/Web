@@ -1,0 +1,65 @@
+body
+{
+    background: linear-gradient(white,#a28ae7);
+}
+section, nav, aside, figure
+{
+    background: #ECDEEE;
+    width: max-content;
+    border-radius: 30px;
+    margin: 20px;
+    border: 5px solid #6F2C71;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.head
+{
+    font-size: 3em;
+    border: 10px solid #6F2C71;
+    margin-left: auto;
+    margin-right: auto;
+}
+img
+{
+    height: 500px;
+    width: auto;
+}
+.icon
+{
+    border-radius: 50%;
+    padding: 0;
+}
+figure
+{
+    border: 0;
+    margin: 0;
+}
+nav
+{
+    font-size: 2em;
+    padding: 20px;
+}
+.ASCII
+{
+    font-size: 3em;
+}
+.code
+{
+    border: 5px solid #6F2C71;
+    font-size: 2em;
+}
+aside
+{
+    margin-right: 40px;
+    margin-left: auto;
+}
+.about
+{
+    font-size: 2em;
+    width: 40%
+}
+sup
+{
+    font-style: italic;
+    font-size: 1.5em;
+}

@@ -8,36 +8,38 @@
 </head>
 <body>
     <header>
-        <div>
+        <section class="head">
             <h1>Прикольная web страница</h1>
-        </div>
+        </section>
     </header>
     <main>
         <nav>
             <a><i>Главная</i></a>
             <a><i>Неглавная</i></a>
-            <a><i>Контактная информация</i></a>
+            <a href="#contacts"><i>Контактная информация</i></a>
         </nav>
-        <figure>
-            <img src="images/icon.png">
-        </figure>
-        <section>
+        <aside class = "icon">
+            <figure class = "icon">
+                <img src="images/icon.png">
+            </figure>
+        </aside>
+        <section class = "ASCII">
             <pre>
-                             .---.
-                .--.     ___/     \
-               /    `.-""   `-,    ;
-              ;     /     O O  \  /
-              `.    \          /-'
-             _  J-.__;      _.'
-            (" /      `.   -=:
-             `:         `, -=|
-              |  F\    i, ; -|
-              |  | |   ||  \_J
-         fsc  mmm! `mmM Mmm'
+                  .---.
+     .--.     ___/     \
+    /    `.-""   `-,    ;
+    ;     /     O O  \  /
+    `.    \          /-'
+    _  J-.__;      _.'
+(" /      `.      -=:
+    `:         `, -=|
+    |  F\    i, ; -|
+    |  | |   ||  \_J
+fsc  mmm! `mmM Mmm'
         
             </pre>
         </section>
-        <section>
+        <section class = "code">
             <code>
                 <pre>
 k = int(input())
@@ -61,7 +63,7 @@ for i in range(len(test)):
                 </pre>
             </code>
         </section>
-        <aside>
+        <aside class = "about">
             <h2>О себе:</h2>
             <p>
                 Дата рождения: <time datetime="2000-03-27">27.03.2000</time>
@@ -90,7 +92,7 @@ for i in range(len(test)):
         </aside>
     </main>
     <footer>
-        <section>
+        <section class = "foot", id="contacts">
             <h2>Контактная информация:</h2>
             <p>
                 Телефон: 8-800-555-35-35
