@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Зиновьев Илья M33011</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Прикольная web страница</h1>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a><i>Главная</i></a>
+            <a><i>Неглавная</i></a>
+            <a><i>Контактная информация</i></a>
+        </nav>
+        <figure>
+            <img src="images/icon.png">
+        </figure>
+        <section>
+            <pre>
+                             .---.
+                .--.     ___/     \
+               /    `.-""   `-,    ;
+              ;     /     O O  \  /
+              `.    \          /-'
+             _  J-.__;      _.'
+            (" /      `.   -=:
+             `:         `, -=|
+              |  F\    i, ; -|
+              |  | |   ||  \_J
+         fsc  mmm! `mmM Mmm'
+        
+            </pre>
+        </section>
+        <section>
+            <code>
+                <pre>
+k = int(input())
+lambdas = list(map(int, input().split()))
+alpha = int(input())
+n = int(input())
+train = []
+for i in range(n):
+    train.append(list(input().split()))
+    train[-1][0] = int(train[-1][0])
+    train[-1][1] = int(train[-1][1])
+model = Bayes(lambdas, alpha)
+model.training(train)
+m = int(input())
+test = []
+for i in range(m):
+    test.append(list(input().split())[1:])
+model.testing(test)
+for i in range(len(test)):
+    print(*model.result[i])
+                </pre>
+            </code>
+        </section>
+        <aside>
+            <h2>О себе:</h2>
+            <p>
+                Дата рождения: <time datetime="2000-03-27">27.03.2000</time>
+                Родной город: Сыктывкар
+            </p>
+            <p>
+                Студент 3 курса ИТМО, направление 09.03.02 “Информационные системы и технологии”
+            </p>
+            <ol>
+                Достижения:
+                <li>Начал делать лабы по web-программированию</li>
+                <li>Пока что не заразился коронавирусом</li>
+                <li>Достигаю недостижимое</li>
+            </ol>
+            <ol>
+                Навыки:
+                <li>C++, C#, Java, Python</li>
+                <li>HTML, CSS, JS</li>
+                <li>Самые мягкие soft skills на прирученном востоке</li>
+                <li>C2 English по версии ИТМО 2020-2021</li>
+                <li>Что-то умею, если захочу</li>
+                <li>Горжусь предыдущим пунктом</li>
+            </ol>
+            <p>Любимая цитата:</p>
+            <sup>Говорят, что чудес не бывает...Нагло врут</sup>
+        </aside>
+    </main>
+    <footer>
+        <section>
+            <h2>Контактная информация:</h2>
+            <p>
+                Телефон: 8-800-555-35-35
+            </p>
+            <p>
+                Мыло: <a href="mailto::itmo264232@niuitmo.ru">itmo264232@niuitmo.ru</a>
+            </p>
+            <p>
+                Telegram: <a href="https://t.me/IlyaZin0vev">@IlyaZin0vev</a>
+            </p>
+            <p>
+                GitHub: <a href="https://github.com/IlyaZinovev">IlyaZinovev</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
