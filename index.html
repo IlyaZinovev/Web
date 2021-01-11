@@ -8,23 +8,19 @@
 </head>
 <body>
     <header>
-        <section class="head">
+        <section class="head", id="header">
             <h1>Прикольная web страница</h1>
         </section>
     </header>
     <main>
-        <nav>
-            <a><i>Главная</i></a>
-            <a><i>Неглавная</i></a>
-            <a href="#contacts"><i>Контактная информация</i></a>
-        </nav>
-        <aside class = "icon">
-            <figure class = "icon">
-                <img src="images/icon.png">
-            </figure>
-        </aside>
-        <section class = "ASCII">
-            <pre>
+        <div class = "left">
+            <nav>
+                <a href="#header" class="ref"><i>Главная</i></a>
+                <a class="ref"><i>Неглавная</i></a>
+                <a href="#contacts" class="ref"><i>Контактная информация</i></a>
+            </nav>
+            <section class = "ASCII">
+                <pre>
                   .---.
      .--.     ___/     \
     /    `.-""   `-,    ;
@@ -33,15 +29,15 @@
     _  J-.__;      _.'
 (" /      `.      -=:
     `:         `, -=|
-    |  F\    i, ; -|
-    |  | |   ||  \_J
+     |  F\    i, ; -|
+     |  | |   ||  \_J
 fsc  mmm! `mmM Mmm'
-        
-            </pre>
-        </section>
-        <section class = "code">
-            <code>
-                <pre>
+            
+                </pre>
+            </section>
+            <section class = "code">
+                <code>
+                    <pre>
 k = int(input())
 lambdas = list(map(int, input().split()))
 alpha = int(input())
@@ -60,52 +56,64 @@ for i in range(m):
 model.testing(test)
 for i in range(len(test)):
     print(*model.result[i])
-                </pre>
-            </code>
-        </section>
-        <aside class = "about">
-            <h2>О себе:</h2>
-            <p>
-                Дата рождения: <time datetime="2000-03-27">27.03.2000</time>
-                Родной город: Сыктывкар
-            </p>
-            <p>
-                Студент 3 курса ИТМО, направление 09.03.02 “Информационные системы и технологии”
-            </p>
-            <ol>
-                Достижения:
-                <li>Начал делать лабы по web-программированию</li>
-                <li>Пока что не заразился коронавирусом</li>
-                <li>Достигаю недостижимое</li>
-            </ol>
-            <ol>
-                Навыки:
-                <li>C++, C#, Java, Python</li>
-                <li>HTML, CSS, JS</li>
-                <li>Самые мягкие soft skills на прирученном востоке</li>
-                <li>C2 English по версии ИТМО 2020-2021</li>
-                <li>Что-то умею, если захочу</li>
-                <li>Горжусь предыдущим пунктом</li>
-            </ol>
-            <p>Любимая цитата:</p>
-            <sup>Говорят, что чудес не бывает...Нагло врут</sup>
-        </aside>
+                    </pre>
+                </code>
+            </section>
+        </div>
+        <div class = "right">
+            <aside class = "icon">
+                <figure class = "icon">
+                    <img src="images/icon.png">
+                </figure>
+            </aside>
+            <aside class = "about">
+                <h2>О себе:</h2>
+                <p>
+                    Дата рождения: <time datetime="2000-03-27">27.03.2000</time>
+                </p>
+                <p>
+                    Родной город: Сыктывкар
+                </p>
+                <p>
+                    Студент 3 курса ИТМО, направление 09.03.02 “Информационные системы и технологии”
+                </p>
+                <ol>
+                    Достижения:
+                    <li>Начал делать лабы по web-программированию</li>
+                    <li>Пока что не заразился коронавирусом</li>
+                    <li>Достигаю недостижимое</li>
+                </ol>
+                <ol>
+                    Навыки:
+                    <li>C++, C#, Java, Python</li>
+                    <li>HTML, CSS, JS</li>
+                    <li>Самые мягкие soft skills на прирученном востоке</li>
+                    <li>C2 English по версии ИТМО 2020-2021</li>
+                    <li>Что-то умею, если захочу</li>
+                    <li>Горжусь предыдущим пунктом</li>
+                </ol>
+                <p>Любимая цитата:</p>
+                <sup>Говорят, что чудес не бывает...Нагло врут</sup>
+            </aside>
+        </div>
     </main>
     <footer>
         <section class = "foot", id="contacts">
             <h2>Контактная информация:</h2>
-            <p>
-                Телефон: 8-800-555-35-35
-            </p>
-            <p>
-                Мыло: <a href="mailto::itmo264232@niuitmo.ru">itmo264232@niuitmo.ru</a>
-            </p>
-            <p>
-                Telegram: <a href="https://t.me/IlyaZin0vev">@IlyaZin0vev</a>
-            </p>
-            <p>
-                GitHub: <a href="https://github.com/IlyaZinovev">IlyaZinovev</a>
-            </p>
+            <div class = "refs">
+                <p class="ref" id="phone">
+                    Телефон: 8-800-555-35-35
+                </p>
+                <p class="ref" id="email">
+                    Мыло: <a href="mailto::itmo264232@niuitmo.ru">itmo264232@niuitmo.ru</a>
+                </p>
+                <p class="ref" id="tlg">
+                    Telegram: <a href="https://t.me/IlyaZin0vev">@IlyaZin0vev</a>
+                </p>
+                <p class="ref" id="github">
+                    GitHub: <a href="https://github.com/IlyaZinovev">IlyaZinovev</a>
+                </p>
+            </div>
         </section>
     </footer>
 </body>
